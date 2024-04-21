@@ -1,0 +1,17 @@
+{
+  "name": "rename-music-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node Src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "es-dirmodule": "^1.0.0",
+    "fs": "^0.0.1-security"
+  }
+}
