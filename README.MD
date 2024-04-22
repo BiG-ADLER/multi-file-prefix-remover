@@ -13,7 +13,7 @@ Install dependencies
   npm install
 ```
 
-- Create folder with any name you want in `C:/` Drive
+- Create folder with any name you want in your `Desktop`
 
 - Go to `Config` folder and Open `Config.json`
 

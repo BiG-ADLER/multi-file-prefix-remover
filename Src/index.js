@@ -1,10 +1,13 @@
 import Config from "../Config/Config.json" assert { type: "json" }
 import { readdirSync, rename } from "fs";
+import { userInfo } from "os";
 
-let Files = readdirSync(`\\files`)
+const FilePath = `\\Users\\${userInfo().username}\\Desktop\\${Config.FileDir}`
+
+let Files = readdirSync(FilePath)
 
 Files.map((FileNames) => {
     let RemovePrefix = FileNames.replace(Config.TextToRemove, '')
 
-    rename(`\\${Config.FileDir}\\${FileNames}`, `\\${Config.FileDir}\\${RemovePrefix}`, () => {})
+    rename(`${FilePath}\\${FileNames}`, `${FilePath}\\${RemovePrefix}`, () => {})
 })
